@@ -15,6 +15,9 @@
             <a href="https://vimeo.com/user67450948" target="_blank" aria-label="Vimeo Link" title="Vimeo" rel="noopener">
               <Icon-Vimeo class="transition-colors duration-300 ease-in-out text-center w-8 text-white hover:text-purple-500"  />
             </a>
+            <a href="https://jtylke.wixsite.com/jeratylke" target="_blank" aria-label="Wix Link" title="Wix (Old Site)" rel="noopener">
+              <Icon-Wix class="transition-colors duration-300 ease-in-out text-center w-12 text-white hover:text-purple-500"  />
+            </a>
           </div>
         </div>
       </div>
@@ -24,7 +27,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue';
-import { IconArtStation, IconVimeo } from '~/components/icons';
+import { IconArtStation, IconVimeo, IconWix } from '~/components/icons';
 export default {
   data() {
     return {
@@ -34,7 +37,8 @@ export default {
   components: {
     Logo,
     IconArtStation,
-    IconVimeo
+    IconVimeo,
+    IconWix
   }
 };
 </script>
