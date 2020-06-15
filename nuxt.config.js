@@ -1,7 +1,7 @@
 const meta = {
   title: 'Jeralise Tylke',
   description: 'Jeralise Tylke Portfolio',
-  url: 'www.jeralisetylke.com',
+  url: 'https://www.jeralisetylke.com',
   image: '/meta.jpg'
 };
 
@@ -47,11 +47,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
       { rel: 'alternate icon', href: '/favicon.png' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Jura:wght@200;400;700&display=swap'
-      }
+      { rel: 'canonical', href: meta.url },
     ]
   },
   /*
@@ -79,7 +75,15 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['nuxt-webfontloader'],
+  /*
+   ** Web Font
+   */
+  webfontloader: {
+    google: {
+      families: ['Jura:200,400,700&display=swap'] //Loads Lato font with weights 400 and 700
+    }
+  },
   /*
    ** Build configuration
    */

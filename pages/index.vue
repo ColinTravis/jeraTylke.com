@@ -9,10 +9,10 @@
             <h2 class="text-white font-semibold font-sans text-center">{{emailAddress}}</h2>
           </div>
           <div class="flex flex-row items-center justify-center space-x-20 my-4">
-            <a href="https://www.artstation.com/jera_tylke" target="_blank" title="Artstation">
+            <a href="https://www.artstation.com/jera_tylke" target="_blank" aria-label="Artstation Link" title="Artstation" rel="noopener">
               <Icon-Art-Station class="transition-colors duration-300 ease-in-out text-center w-16 text-white hover:text-purple-500" />
             </a>
-            <a href="https://vimeo.com/user67450948" target="_blank" title="Vimeo">
+            <a href="https://vimeo.com/user67450948" target="_blank" aria-label="Vimeo Link" title="Vimeo" rel="noopener">
               <Icon-Vimeo class="transition-colors duration-300 ease-in-out text-center w-8 text-white hover:text-purple-500"  />
             </a>
           </div>
