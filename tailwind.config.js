@@ -1,12 +1,13 @@
 // tailwind.config.js
 module.exports = {
+  purge: ['./**/*.vue'],
   theme: {
     extend: {
       fontFamily: {
-        jura:['Jura']
+        jura: ['Jura']
       },
       colors: {
-        'neon-green': "#9cdbff"
+        'neon-green': '#9cdbff'
       }
     }
   },
