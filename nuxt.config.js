@@ -21,7 +21,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge,chrome=1' },
       { hid: 'description', name: 'description', content: meta.description },
-      { name: 'theme-color', content: '#000000' },
+      { name: 'theme-color', content: '#9f7aea' },
 
       // Generic
       { itemprop: 'name', hid: 'name', content: meta.title },
@@ -45,7 +45,7 @@ export default {
       { property: 'og:image', hid: 'og:image', content: meta.image }
     ],
     link: [
-      { rel: 'icon', type:"image/svg+xml", href: '/favicon.svg' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
       { rel: 'alternate icon', href: '/favicon.png' },
       {
         rel: 'stylesheet',
@@ -57,9 +57,9 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#9f7aea' },
   env: {
-    emailAddress: 'jera@jeralisetylke.com'
+    emailAddress: 'jeralisetylke@gmail.com'
   },
   /*
    ** Global CSS
