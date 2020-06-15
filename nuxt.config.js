@@ -21,7 +21,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 'http-equiv': 'x-ua-compatible', content: 'ie=edge,chrome=1' },
       { hid: 'description', name: 'description', content: meta.description },
-      { name: 'theme-color', content: '#9f7aea' },
+      { name: 'theme-color', content: '#000000' },
 
       // Generic
       { itemprop: 'name', hid: 'name', content: meta.title },
