@@ -1,26 +1,28 @@
 <template>
   <section>
-    <!-- Banner component -->
-    <homepage-banner :banner="banner"/>
     <!-- Slices block component -->
     <slices-block :slices="slices"/>
   </section>
 </template>
 
 <script>
+// Imports for all components
 
 export default {
-  name: 'Home',
+  name: 'About',
+  head () {
+    return {
+      title: 'Prismic Nuxt.js Multi Page Website',
+    }
+  },
   async asyncData({ $prismic, error }) {
     try{
       // Query to get the home page content
-      const homepage = (await $prismic.api.getSingle('home')).data
+      const about = (await $prismic.api.getSingle('about')).data
 
       return {
-        // Page content
-        banner: homepage.homepage_banner[0],
         // Set slices as variable
-        slices: homepage.page_content
+        slices: about.page_content
       }
     } catch (e) {
       error({ statusCode: 404, message: 'Page not found' })
